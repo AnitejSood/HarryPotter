@@ -1,0 +1,145 @@
+:root {
+    --white: #fff;
+    --bg-color: #410606;
+    --bg-card: #af4040;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    margin: 45px 0 20px 0;
+}
+
+#searchWrapper {
+    margin: 0 auto 35px auto;
+    width: 500px;
+}
+
+#searchBar {
+    width: 500px;
+    height: 45px;
+    border-radius:15px;
+    padding-left: 10px;
+}
+
+#charactersList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+.character {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.text {
+    margin: 20px;
+}
+
+.character h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.character img {
+    width: 150px;
+    height: 190px;
+}
+
+footer {
+    padding-top: 50px;
+    display: table;
+    margin: 0 auto 0 auto;
+    color: #7a7a7a;
+}
+  
+a#vini{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  
+}
+  
+a#vini:hover {
+    color: #858181;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+    .container {
+       max-width: 540px;
+     }
+
+     #charactersList {
+         flex-direction: column;
+    }
+
+    .character {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+   }
